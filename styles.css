@@ -62,8 +62,12 @@ figure{
     width: 90%;
     height: auto;
     position: relative;
-    padding: 30px;
+    padding: 15px 20px;
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
 }
 #tribute-info h2{
     display: flex;
@@ -73,20 +77,21 @@ figure{
     font-family: var(--Pixel-font-title);
     text-shadow: var(--text-shadow);
     color: var(--terciary-color);
+    background-color: var(--Primary-color);
 }
 
 #tribute-info::after{
     position: absolute;
     content: " ";
-    width: 2px;
-    height: 87%;
+    width: 4px;
+    height: 100%;
     background-color: var(--terciary-color);
 }
 #tribute-info ul{
     list-style: none;
 }
 #tribute-info ul li{
-    width: 45%;
+    width: 50%;
     height: auto;
     padding: 5px 10px;
     color: white;
@@ -109,7 +114,7 @@ figure{
 #tribute-info ul li:nth-child(even){
     float: right;
     clear: left;
-    transform: translateX(-30px);
+    transform: translateX(30px);
 }
 #tribute-info ul li .time-line--circle {
     width: 10px;
@@ -117,7 +122,6 @@ figure{
     background-color: #f8ad44;
     border-radius: 50%;
     position: absolute;
-   
     transform: translate(-50%, -50%);
 }
 #tribute-info ul li .time-line--circle::after{
@@ -135,12 +139,12 @@ figure{
 }
 
 #tribute-info ul li:nth-child(odd) .time-line--circle{
-    right: -32px;
+    right: -10px;
     transform: translate(50%, -50%);
 }
 
 #tribute-info ul li:nth-child(even) .time-line--circle{
-    left: -52px;
+    left: -20px;
     transform: translate(50%, -50%);
 }
 
